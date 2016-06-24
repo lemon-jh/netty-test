@@ -14,7 +14,7 @@ public class MyServcrHandler extends ChannelHandlerAdapter {
 	 * 当客户端主动链接服务端的链接后，这个通道就是活跃的了。也就是客户端与服务端建立了通信通道并且可以传输数据
 	 */
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
-		System.out.println("==>" + ctx.channel().localAddress().toString()+" channelActive");
+		System.out.println("==>" + ctx.channel().localAddress().toString()+" channelActive----");
 	}
 	
 	/*
@@ -37,17 +37,17 @@ public class MyServcrHandler extends ChannelHandlerAdapter {
 	 * 简而言之就是从通道中读取数据，也就是服务端接收客户端发来的数据
 	 * 但是这个数据在不进行解码时它是ByteBuf类型的后面例子我们在介绍
 	 * 
-	 */
+	 */   
 	public void channelRead(ChannelHandlerContext ctx, Object msg)
 			throws Exception {
 		
-		ByteBuf buf = (ByteBuf) msg;
+		//ByteBuf buf = (ByteBuf) msg;
 		
-		byte[] msgByte = new byte[buf.readableBytes()];
+		//byte[] msgByte = new byte[buf.readableBytes()];
 		
-		buf.readBytes(msgByte);
+		//buf.readBytes(msgByte);
 		
-		System.out.println("==>接受数据" + new String(msgByte,"UTF-8") + "--" + new Date());
+		System.out.println("==>接受数据" + msg + "--" + new Date());
 		
 	}
 	

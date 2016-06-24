@@ -49,6 +49,6 @@ public class NettyServer {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
-	
+	}  
+	 
 }
