@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.it-lemon.study</groupId>
-	<artifactId>netty-e1</artifactId>
+	<artifactId>netty-e2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>netty-e1</name>
+	<name>netty-e2</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -15,11 +15,12 @@
 	</properties>
 
 	<dependencies>
+	
 		<dependency>
 		    <groupId>io.netty</groupId>
 		    <artifactId>netty-all</artifactId>
 		    <version>5.0.0.Alpha2</version>
-		</dependency>	
+		</dependency>		
 	
 		<dependency>
 			<groupId>junit</groupId>

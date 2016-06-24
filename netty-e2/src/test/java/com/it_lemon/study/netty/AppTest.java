@@ -1,4 +1,4 @@
-package com.itlemon.study.netty;
+package com.it_lemon.study.netty;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
